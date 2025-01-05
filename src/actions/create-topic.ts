@@ -38,7 +38,7 @@ export async function createTopic(formState: CreateTopicFormState,formData: Form
     }
 
     const session = await auth()
-    if(!session || !session.user) {
+    if(!session || !session.user) { 
         return {
             fieldErrors: {
                 _form: ["You must be signed in to create a topic"]               
